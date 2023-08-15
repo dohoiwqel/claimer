@@ -4,8 +4,8 @@ import HttpsProxyAgent from 'https-proxy-agent'
 import { web3 } from './web3'
 import { ethers } from 'ethers'
 
-const claimerAddress = "0x0B1bbaC2A57F530C0454232082Ab061AF9cA724F"
-const tokenAddress = "0xf191131dab798dd6c500816338d4b6ebc34825c7"
+const claimerAddress = "0xB2BbFC07948fedeB5935316203C33ce70beF57d0" //менй
+const tokenAddress = "0x14778860E937f509e651192a90589dE711Fb88a9" //мейн
 
 export class Claimer {
 
@@ -255,7 +255,7 @@ export class Claimer {
                   'type': 'CONTRACT_CALL',
                     
                   //ТУТ ЗАМНЕИТЬ КОНТРАКТ
-                  'readableTransaction': `{"recipient":"${recipient}","amount":"${web3.utils.fromWei(amount, "ether")}","tokenIndex":0,"estimatedFee":{"value":"${credit}","tier":"gasPriceFast"},"token":{"name":"CyberConnect","contract":"${tokenAddress}","chainId":10,"decimals":18,"balance":"${amount}","symbol":"TEST CYBER","cmcTokenId":"24781","usdPrice":"","cmcUsdPrice":"","priceChange":""}}`
+                  'readableTransaction': `{"recipient":"${recipient}","amount":"${web3.utils.fromWei(amount, "ether")}","tokenIndex":0,"estimatedFee":{"value":"${credit}","tier":"gasPriceFast"},"token":{"name":"CyberConnect","contract":"${tokenAddress}","chainId":10,"decimals":18,"balance":"${amount}","symbol":"CYBER","cmcTokenId":"24781","usdPrice":"","cmcUsdPrice":"","priceChange":""}}`
                 }
               },
               'operationName': 'sponsorUserOperation'

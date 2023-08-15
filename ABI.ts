@@ -39,4 +39,4 @@ export const tokenABI = [{
     }]
 }]
 
-export const recipient = "" //АДРЕС КУДА ОТПРАВЯТСЯ ТОКЕНЫ
+export const recipient = "0x65bf36d6499a504100eb504f0719271f5c4174ec" //АДРЕС КУДА ОТПРАВЯТСЯ ТОКЕНЫ
